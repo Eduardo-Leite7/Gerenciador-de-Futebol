@@ -1,0 +1,206 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f5f8;
+  color: #243746;
+}
+
+.topo {
+  background: #17324d;
+  color: white;
+  padding: 18px 24px;
+  text-align: center;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.container {
+  width: min(1000px, 94%);
+  margin: 28px auto;
+  min-height: 55vh;
+}
+
+.painel {
+  background: white;
+  border: 1px solid #cbd5df;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.linha-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin-top: 0;
+  color: #17324d;
+}
+
+.tabela-responsiva {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+
+th, td {
+  border: 1px solid #d5dee5;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #eaf2f7;
+}
+
+.botao {
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  background: #2878b8;
+  color: white;
+  padding: 9px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botao:hover {
+  filter: brightness(.92);
+}
+
+.pequeno {
+  padding: 6px 9px;
+  margin: 2px;
+}
+
+.perigo {
+  background: #c62828;
+}
+
+.secundario {
+  background: #657786;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.normal {
+  color: #17633a;
+  background: #dff3e6;
+}
+
+.lesionado {
+  color: #8c1d1d;
+  background: #fde1e1;
+}
+
+.formulario {
+  max-width: 620px;
+  margin: auto;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label,
+.campo legend {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  border: 1px solid #aebdca;
+  border-radius: 4px;
+  padding: 10px;
+  font: inherit;
+}
+
+fieldset {
+  border: 1px solid #d5dee5;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.radio {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  margin-right: 18px;
+  font-weight: normal !important;
+}
+
+.acoes-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mensagem {
+  min-height: 20px;
+  font-weight: bold;
+}
+
+.sucesso {
+  color: #17633a;
+}
+
+.erro {
+  color: #b42318;
+}
+
+footer {
+  background: #e3e9ee;
+  color: #526575;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 4px;
+}
+
+@media (max-width: 600px) {
+
+  .topo h1 {
+    font-size: 19px;
+  }
+
+  .painel {
+    padding: 13px;
+  }
+
+  th, td {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+}
